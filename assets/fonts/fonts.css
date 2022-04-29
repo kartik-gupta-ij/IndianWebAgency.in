@@ -1,5 +1,6 @@
 @font-face {
     font-family: Lato;
+    font-display: swap;
     font-style: normal;
     font-weight: 400;
     src: url(https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
@@ -8,6 +9,7 @@
 
 @font-face {
     font-family: Lato;
+    font-display: swap;
     font-style: normal;
     font-weight: 400;
     src: url(https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
@@ -15,6 +17,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: Lato;
     font-style: normal;
     font-weight: 700;
@@ -24,6 +27,7 @@
 
 @font-face {
     font-family: Lato;
+    font-display: swap;
     font-style: normal;
     font-weight: 700;
     src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
