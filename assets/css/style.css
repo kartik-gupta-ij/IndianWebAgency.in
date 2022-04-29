@@ -836,15 +836,22 @@ section {
     color: #ff651c
 }
 
+
+
+.pictureClass img {
+    position:absolute; height: 100%; width: 100%; top: 0; left: 0; object-fit: cover;}
+
 .testimonials {
     padding: 80px 0;
-    background: url(http://indianwebagency.in/assets/img/testimonials-bg.webp) no-repeat;
+    /* background: url(http://indianwebagency.in/assets/img/testimonials-bg.webp) no-repeat;
     background-position: center center;
-    background-size: cover;
-    position: relative
+    background-size: cover; */
+    position: relative;
+    z-index: 1;
+
 }
 
-.testimonials::before {
+.testimonials::after {
     content: "";
     position: absolute;
     left: 0;
