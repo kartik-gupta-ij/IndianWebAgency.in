@@ -938,19 +938,25 @@ section {
     font-size: 15px;
     font-weight: 600;
     line-height: 1;
-    background: #ff651c;
+    background: #111111;
     padding: 7px 10px;
     text-transform: uppercase;
     color: #fff;
+    padding: 20px 20px;
     transition: all .3s ease-in-out;
-    border: 2px solid #ff651c;
+    /* border: 2px solid #ff651c; */
     border-radius: 10px
 }
 
 .portfolio #portfolio-flters li.filter-active,
 .portfolio #portfolio-flters li:hover {
-    color: #fff;
-    background: #212121
+    color: #ff651c;
+    background: #111111;
+}
+.portfolio #portfolio-flters li:hover {
+    color: #ff651c;
+    background: #111111;
+    text-decoration: underline #ffffff 1px;
 }
 
 .portfolio .portfolio-item {
@@ -1163,7 +1169,7 @@ section {
 }
 
 .pricing .btn-buy {
-    background: #ff651c;
+    background: #111111;
     display: inline-block;
     padding: 8px 35px;
     border-radius: 4px;
@@ -1177,10 +1183,12 @@ section {
     transition: .3s
 }
 
+
+
 .pricing .btn-buy:hover {
-    background: #111;
-    color: #fff;
-    border: 1px solid #ff651c
+    color: #ff651c;
+    background: #111111;
+    text-decoration: underline #ffffff 1px;
 }
 
 .pricing .advanced {
@@ -1302,18 +1310,18 @@ section {
 }
 
 .email-form button[type=submit] {
-    background: #ff651c;
+    background: #111111;
     border: 0;
     padding: 10px 24px;
-    border: 1px solid #ff651c;
     color: #fff;
     transition: .4s;
     border-radius: 5px
 }
 
 .email-form button[type=submit]:hover {
-    background: #212121;
-    color: #fff
+    color: #ff651c;
+    background: #111111;
+    text-decoration: underline #ffffff 1px;
 }
 
 .map {
