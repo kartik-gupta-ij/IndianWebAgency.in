@@ -1200,8 +1200,10 @@ section {
     z-index: 1;
     font-size: 14px;
     padding: 1px 0 3px 0;
-    background: #ff651c;
-    color: #fff
+    background: #111111;
+    color: #fff;
+    border: 1px solid #ff651c;
+
 }
 
 .contact .info-box {
