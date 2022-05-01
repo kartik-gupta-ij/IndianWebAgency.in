@@ -99,7 +99,7 @@
               
                 <div class="video-wrapper">
                   <video playsinline autoplay muted loop class="fvideo">
-                    <source src="https://indianwebagency.in/assets/img/hero-bg.webm" type="video/webm">
+                    <source src="assets/img/hero-bg.webm" type="video/webm">
                     Your browser does not support the video tag.
                   </video>
 
@@ -904,16 +904,30 @@
     
       // This is the actual script
       if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) { 
-        ni('img').forEach(ele => {
+        ni('video').forEach(ele => {
           src = ele.src;
-          if(src.includes('webp','webm')) {
-            src = src.replace('.webp', '.jpg');
+          if(src.includes('webm')) {
+            src = src.replace('.webm', '.mp4');
             ele.src = src;
           }
         });
       }
     
     });
+    document.addEventListener("DOMContentLoaded", function(event) {
+    
+    // This is the actual script
+    if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) { 
+      ni('video').forEach(ele => {
+        src = ele.src;
+        if(src.includes('webp')) {
+          src = src.replace('.webp', '.jpg');
+          ele.src = src;
+        }
+      });
+    }
+  
+  });
     </script>
   <!-- Purecounter JS-->
   <script src="assets/js/purecounter.js"></script>
