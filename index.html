@@ -848,7 +848,7 @@
           <div class="row">
             <div class="col-12">
               <div class="map">
-                <iframe title="Maps"                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.338779788778!2d80.94465801436608!3d26.92447246606691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957ab92617425%3A0x8adbdbf0f9d9aad!2s645%2F55%2C%20Janki%20Vihar%20Colony%2C%20Jankipuram%2C%20Lucknow%2C%20Uttar%20Pradesh%20226021!5e0!3m2!1sen!2sin!4v1647948412369!5m2!1sen!2sin"
+                <iframe title="Maps"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.338779788778!2d80.94465801436608!3d26.92447246606691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957ab92617425%3A0x8adbdbf0f9d9aad!2s645%2F55%2C%20Janki%20Vihar%20Colony%2C%20Jankipuram%2C%20Lucknow%2C%20Uttar%20Pradesh%20226021!5e0!3m2!1sen!2sin!4v1647948412369!5m2!1sen!2sin"
                   style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
             </div>
@@ -892,6 +892,29 @@
     <div class="mouse-cursor cursor-inner"></div>
     <!-- Mouse-Cursor End-->
   </div>
+  <script>
+
+    // This is needed to use the "$" symbol and make the overall code less verbose	
+    const nia = document.querySelector.bind(document);
+    const ni = document.querySelectorAll.bind(document);
+    
+    
+    // Load this script after everything else (document is ready)
+    document.addEventListener("DOMContentLoaded", function(event) {
+    
+      // This is the actual script
+      if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) { 
+        ni('img').forEach(ele => {
+          src = ele.src;
+          if(src.includes('webp','webm')) {
+            src = src.replace('.webp', '.jpg');
+            ele.src = src;
+          }
+        });
+      }
+    
+    });
+    </script>
   <!-- Purecounter JS-->
   <script src="assets/js/purecounter.js"></script>
   <!-- Bootstrap JS-->
