@@ -35,7 +35,9 @@
   <!-- Font-Awesome CSS -->
   <link href="assets/css/all.css" rel="stylesheet">
   <!-- Animate CSS-->
-  <link href="assets/css/animate.min.css" rel="stylesheet">
+
+  <link rel="preload" href="assets/css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/css/animate.min.css"></noscript>
   <!-- Glightbox CSS-->
 <link rel="preload" href="assets/css/glightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="assets/css/glightbox.min.css"></noscript>
